@@ -81,7 +81,7 @@ st.markdown("""
 # ======================
 with st.sidebar:
     st.title("📦 StockSync")
-    st.write("Smart Inventory & Order System")
+    st.write("Automated Inventory & Coming Order Tracking")
 
     menu = st.radio(
         "Navigation",
