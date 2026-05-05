@@ -107,7 +107,7 @@ def process_data(df):
 
     df["AV"] = df.apply(
         lambda r: r["Reserved Quantity"] if r["XEE Reserved Qty"] == 0
-        else r["XEE Reserved Qty"] - r["Reserved Quantity"],
+        else  r["Reserved Quantity"] - r["XEE Reserved Qty"],
         axis=1
     )
 
@@ -161,7 +161,7 @@ if uploaded_file:
     col1.markdown(f'<div class="metric-box"><h3>{len(df)}</h3><p>Rows Loaded</p></div>', unsafe_allow_html=True)
     col2.markdown(f'<div class="metric-box"><h3>{len(processed)}</h3><p>Rows Processed</p></div>', unsafe_allow_html=True)
     col3.markdown(f'<div class="metric-box"><h3>5</h3><p>Columns Generated</p></div>', unsafe_allow_html=True)
-    col4.markdown(f'<div class="metric-box"><h3>OK</h3><p>Status</p></div>', unsafe_allow_html=True)
+    col4.markdown(f'<div class="metric-box"><h3>Done</h3><p>Status</p></div>', unsafe_allow_html=True)
 
     st.divider()
 
