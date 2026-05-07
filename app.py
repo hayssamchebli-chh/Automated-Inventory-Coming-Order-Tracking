@@ -83,11 +83,6 @@ with st.sidebar:
     st.title("📦 StockSync")
     st.write("Automated Inventory & Coming Order Tracking")
 
-    menu = st.radio(
-        "Navigation",
-        ["Home", "Upload & Process", "Processed Data", "About"]
-    )
-
 # ======================
 # HEADER
 # ======================
