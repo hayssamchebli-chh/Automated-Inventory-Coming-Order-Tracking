@@ -115,7 +115,7 @@ def process_data(df):
 
     df["Not AV"] = df["Quantity"] - df["AV"]
     
-    return df[["No.", "Description", "Quantity", "AV", "No Order", "Not AV"]]
+    return df[["No.", "Description", "Quantity", "AV", "Not AV" , "No Order"]]
 
 
 def save_excel(original_sheets, processed_df):
